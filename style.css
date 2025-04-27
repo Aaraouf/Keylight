@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  nav.navbar {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav.navbar .logo img {
+    height: 50px;
+  }
+  
+  nav.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav.navbar .nav-links li {
+    display: inline;
+  }
+  
+  nav.navbar .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav.navbar .book-now {
+    background: #4CAF50;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  
+  header.hero {
+    background: url('https://images.unsplash.com/photo-1542744173-05336fcc7ad4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    color: white;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  header.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .services .service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .service-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .service-card h3 {
+    margin-top: 0;
+  }
+  
+  .service-card .price {
+    font-weight: bold;
+    color: #4CAF50;
+    margin: 10px 0;
+  }
+  
+  .about p {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact button {
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    nav.navbar .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .services .service-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    header.hero h1 {
+      font-size: 2.2rem;
+    }
+    header.hero p {
+      font-size: 1rem;
+    }
+  }
+  
