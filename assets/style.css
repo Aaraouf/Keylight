@@ -1,0 +1,290 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #093366;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #ffffff;
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav ul li a {
+  color: #093366;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffc72c;
+}
+
+.cta {
+  background: #ffc72c;
+  color: #093366;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cta:hover {
+  background: #ffb300;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #0b3c7c, #ffc107);
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  animation: fadeIn 2.5s ease;
+}
+
+.hero-btn {
+  background: #ffffff;
+  color: #093366;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.hero-btn:hover {
+  background: #ffe082;
+  color: #093366;
+}
+
+/* Clients Section */
+.clients {
+  padding: 50px 5%;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.client-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.client-logos img {
+  height: 40px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.client-logos img:hover {
+  opacity: 1;
+}
+
+/* How It Works Section */
+.how-it-works {
+  background: #e9f1fb;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.step {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: fadeUp 1s ease forwards;
+}
+
+.step h3 {
+  color: #093366;
+  margin-bottom: 10px;
+}
+
+.step p {
+  color: #555;
+}
+
+/* Testimonials */
+.testimonials {
+  background: #093366;
+  color: white;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.testimonial {
+  background: #0b3c7c;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  animation: fadeUp 1.5s ease forwards;
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+.testimonial h4 {
+  margin-top: 10px;
+  color: #ffc72c;
+}
+
+/* Contact CTA */
+.contact-cta {
+  background: #e9f1fb;
+  color: #093366;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.contact-cta .contact-btn {
+  background: #093366;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.contact-cta .contact-btn:hover {
+  background: #0d47a1;
+}
+
+/* Footer */
+footer {
+  background: #093366;
+  color: white;
+  padding: 40px 5% 20px 5%;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-left {
+  max-width: 300px;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  color: #ffffff;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #ffc72c;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeUp {
+  0% {opacity: 0; transform: translateY(30px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .steps, .testimonial-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-links {
+    flex-direction: column;
+  }
+}
