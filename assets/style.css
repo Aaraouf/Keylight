@@ -1,0 +1,118 @@
+body {
+  background: #093366;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #ffffff;
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.keylight {
+  color: #093366;
+}
+
+.growth {
+  color: #ffc72c;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #093366;
+  font-weight: bold;
+}
+
+.book-now {
+  background: #ffc72c;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #093366;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background: #ffc72c;
+  color: #093366;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.page-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact-form button {
+  background: #ffc72c;
+  color: #093366;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background: #093366;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
