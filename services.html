@@ -5,6 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Services | Keylight Growth</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero {
+      background: linear-gradient(to right, #09356B, #004c97);
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+      animation: fadeIn 1s ease-out;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .service-card {
+      background: #f9f9f9;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .service-card h3 {
+      color: #09356B;
+      margin-bottom: 0.5rem;
+    }
+    .service-card p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .unlock-btn {
+      background: #ffc72c;
+      color: #09356B;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
 
@@ -23,29 +86,31 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header class="page-hero" style="background: linear-gradient(to right, #09356B, #004c97); color: white; padding: 4rem 2rem; text-align: center;">
-    <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Our Services</h1>
-    <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">
-      Scalable sales enablement and revenue solutions to help you grow faster, smarter, and stronger.
-    </p>
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <h1>Unlock Scalable Growth. One Service at a Time.</h1>
+    <p>We don’t just consult — we engineer your growth infrastructure with precision frameworks and full-funnel enablement.</p>
   </header>
 
   <!-- SERVICES GRID -->
-  <section style="padding: 4rem 2rem; max-width: 1100px; margin: auto;">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-      <div style="background: #f4f6f8; padding: 2rem; border-radius: 12px;">
-        <h3 style="color: #09356B;">Starter Package</h3>
-        <p>Playbook creation, CRM audit, and basic enablement setup for early-stage teams.</p>
-      </div>
-      <div style="background: #f4f6f8; padding: 2rem; border-radius: 12px;">
-        <h3 style="color: #09356B;">Growth Package</h3>
-        <p>Strategic frameworks, CRM optimization, and full-funnel GTM for scaling teams.</p>
-      </div>
-      <div style="background: #f4f6f8; padding: 2rem; border-radius: 12px;">
-        <h3 style="color: #09356B;">Enterprise Package</h3>
-        <p>Executive enablement, stack integration, and advanced sales transformation.</p>
-      </div>
+  <section class="services-grid">
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Starter">
+      <h3>Starter Package</h3>
+      <p>Get your foundation right. Ideal for early-stage teams needing structure and clarity.</p>
+      <a class="unlock-btn" href="booking.html">Unlock This</a>
+    </div>
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1581092334620-3be31d9bb931" alt="Growth">
+      <h3>Growth Package</h3>
+      <p>Upgrade your sales engine. CRM workflows, coaching, and strategic enablement tools.</p>
+      <a class="unlock-btn" href="booking.html">Unlock This</a>
+    </div>
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Enterprise">
+      <h3>Enterprise Package</h3>
+      <p>Advanced sales transformation with executive advisory, workshops, and long-term scale plans.</p>
+      <a class="unlock-btn" href="booking.html">Unlock This</a>
     </div>
   </section>
 
@@ -56,3 +121,4 @@
 
 </body>
 </html>
+
