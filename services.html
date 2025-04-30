@@ -6,10 +6,44 @@
   <title>Services | Keylight Growth</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    .navbar {
+      background: #fff;
+      border-bottom: 4px solid #09356B;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #09356B;
+    }
+    .cta-button {
+      background: #ffc72c;
+      color: #09356B;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: bold;
+    }
     .hero {
       background: linear-gradient(to right, #000000, #09356B);
       color: white;
-      padding: 5rem 2rem;
+      padding: 6rem 2rem;
       text-align: center;
       animation: fadeIn 1s ease-out;
     }
@@ -134,7 +168,7 @@
       <a class="unlock-btn" href="booking.html">Unlock This</a>
     </div>
     <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1581092334620-3be31d9bb931" alt="Growth">
+      <img src="https://images.unsplash.com/photo-1621607511344-02c9b100c05e" alt="Growth">
       <h3>Growth Package</h3>
       <p>Upgrade your sales engine. CRM workflows, coaching, and strategic enablement tools.</p>
       <ul class="feature-list">
@@ -158,12 +192,17 @@
   </section>
 
   <!-- HOW IT WORKS PLACEHOLDER -->
-  <section style="text-align: center; padding: 4rem 2rem;">
+  <section style="text-align: center; padding: 4rem 2rem; background: #f4f6f8;">
     <h2 style="color: #09356B; font-size: 2rem; margin-bottom: 1rem;">How It Works</h2>
-    <p style="max-width: 800px; margin: 0 auto; color: #333; font-size: 1.1rem;">
-      From onboarding to results, we guide your team through a seamless, transparent process that prioritizes collaboration, accountability, and measurable outcomes. Explore our proven approach below:
+    <p style="max-width: 800px; margin: 0 auto 2rem; color: #333; font-size: 1.1rem;">
+      From onboarding to results, we guide your team through a seamless, transparent process that prioritizes collaboration, accountability, and measurable outcomes.
     </p>
-    <!-- This is where you would insert a visual/step-by-step guide -->
+    <ol style="list-style-position: inside; max-width: 700px; margin: 0 auto; text-align: left; color: #09356B;">
+      <li><strong>Meet the Team:</strong> Align on vision and timelines.</li>
+      <li><strong>Define Your ICP:</strong> Map out audience targets and messaging.</li>
+      <li><strong>Build the Engine:</strong> Tools, enablement, CRM flows.</li>
+      <li><strong>Launch & Scale:</strong> Activate and monitor outcomes.</li>
+    </ol>
   </section>
 
   <!-- FOOTER -->
@@ -173,4 +212,3 @@
 
 </body>
 </html>
-
