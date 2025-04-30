@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     .hero {
-      background: linear-gradient(to right, #09356B, #004c97);
+      background: linear-gradient(to right, #000000, #09356B);
       color: white;
       padding: 5rem 2rem;
       text-align: center;
@@ -16,11 +16,13 @@
     .hero h1 {
       font-size: 2.8rem;
       margin-bottom: 1rem;
+      animation: popIn 1s ease-out;
     }
     .hero p {
       font-size: 1.2rem;
       max-width: 700px;
       margin: 0 auto;
+      animation: fadeIn 1.5s ease-out;
     }
     .services-grid {
       display: grid;
@@ -34,12 +36,14 @@
       background: #f9f9f9;
       padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
       text-align: center;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeUp 0.8s ease forwards;
     }
     .service-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     }
     .service-card img {
       width: 100%;
@@ -49,10 +53,22 @@
     .service-card h3 {
       color: #09356B;
       margin-bottom: 0.5rem;
+      font-size: 1.3rem;
     }
     .service-card p {
       font-size: 1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .feature-list {
+      text-align: left;
+      font-size: 0.95rem;
+      margin: 0 auto 1.5rem;
+      max-width: 250px;
+      color: #333;
+    }
+    .feature-list li {
+      margin-bottom: 0.5rem;
     }
     .unlock-btn {
       background: #ffc72c;
@@ -62,10 +78,22 @@
       border-radius: 6px;
       font-weight: bold;
       display: inline-block;
+      transition: background 0.3s ease;
+    }
+    .unlock-btn:hover {
+      background: #e6b821;
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes popIn {
+      0% { transform: scale(0.95); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
     }
   </style>
 </head>
@@ -98,20 +126,44 @@
       <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Starter">
       <h3>Starter Package</h3>
       <p>Get your foundation right. Ideal for early-stage teams needing structure and clarity.</p>
+      <ul class="feature-list">
+        <li>CRM Audit</li>
+        <li>Enablement Setup</li>
+        <li>Messaging Framework</li>
+      </ul>
       <a class="unlock-btn" href="booking.html">Unlock This</a>
     </div>
     <div class="service-card">
       <img src="https://images.unsplash.com/photo-1581092334620-3be31d9bb931" alt="Growth">
       <h3>Growth Package</h3>
       <p>Upgrade your sales engine. CRM workflows, coaching, and strategic enablement tools.</p>
+      <ul class="feature-list">
+        <li>Custom CRM Workflows</li>
+        <li>Manager Coaching</li>
+        <li>Enablement Playbooks</li>
+      </ul>
       <a class="unlock-btn" href="booking.html">Unlock This</a>
     </div>
     <div class="service-card">
       <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Enterprise">
       <h3>Enterprise Package</h3>
       <p>Advanced sales transformation with executive advisory, workshops, and long-term scale plans.</p>
+      <ul class="feature-list">
+        <li>Executive Enablement</li>
+        <li>Leadership Workshops</li>
+        <li>Analytics + Tech Stack</li>
+      </ul>
       <a class="unlock-btn" href="booking.html">Unlock This</a>
     </div>
+  </section>
+
+  <!-- HOW IT WORKS PLACEHOLDER -->
+  <section style="text-align: center; padding: 4rem 2rem;">
+    <h2 style="color: #09356B; font-size: 2rem; margin-bottom: 1rem;">How It Works</h2>
+    <p style="max-width: 800px; margin: 0 auto; color: #333; font-size: 1.1rem;">
+      From onboarding to results, we guide your team through a seamless, transparent process that prioritizes collaboration, accountability, and measurable outcomes. Explore our proven approach below:
+    </p>
+    <!-- This is where you would insert a visual/step-by-step guide -->
   </section>
 
   <!-- FOOTER -->
