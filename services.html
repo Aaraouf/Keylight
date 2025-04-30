@@ -117,6 +117,41 @@
     .unlock-btn:hover {
       background: #e6b821;
     }
+    .how-it-works {
+      background: #f4f6f8;
+      padding: 4rem 2rem;
+    }
+    .how-it-works h2 {
+      color: #09356B;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .how-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .how-step {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      text-align: center;
+      animation: fadeUp 0.8s ease forwards;
+    }
+    .how-step img {
+      width: 60px;
+      margin-bottom: 1rem;
+    }
+    .how-step strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #09356B;
+    }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -132,42 +167,25 @@
   </style>
 </head>
 <body>
-
-  <!-- NAVBAR -->
- <!-- NAVBAR -->
-<nav class="navbar">
-  <div class="nav-container" style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
-    <div style="flex: 1;">
+  <nav class="navbar">
+    <div class="nav-container">
       <a href="index.html" class="logo">
         <img src="assets/Logo.png" alt="Keylight Growth Logo" />
       </a>
-    </div>
-    <div style="flex: 1; display: flex; justify-content: flex-end; align-items: center; gap: 2rem;">
-      <ul class="nav-links" style="display: flex; gap: 2rem; list-style: none; margin: 0; padding: 0;">
-        <li><a href="services.html">Services</a></li>
+      <ul class="nav-links">
+        <li><a href="services.html" class="active">Services</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <a href="booking.html" class="cta-button">Get Started</a>
     </div>
-  </div>
-</nav>
+  </nav>
 
+  <header class="hero">
+    <h1>Unlock Scalable Growth. One Service at a Time.</h1>
+    <p>We don’t just consult — we engineer your growth infrastructure with precision frameworks and full-funnel enablement.</p>
+  </header>
 
- <!-- HERO SECTION -->
-<header class="hero">
-  <div style="max-width: 800px; margin: 0 auto;">
-    <h1 style="font-size: 2.8rem; margin-bottom: 1rem;">
-      Unlock Scalable Growth.<br>One Service at a Time.
-    </h1>
-    <p style="font-size: 1.2rem; line-height: 1.6;">
-      We don’t just consult — we engineer your growth infrastructure with precision frameworks and full-funnel enablement.
-    </p>
-  </div>
-</header>
-
-
-  <!-- SERVICES GRID -->
   <section class="services-grid">
     <div class="service-card">
       <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Starter">
@@ -181,7 +199,7 @@
       <a class="unlock-btn" href="booking.html">Unlock This</a>
     </div>
     <div class="service-card">
-    <img src="https://images.unsplash.com/photo-1573164574238-160d0d94add6?auto=format&fit=crop&w=800&q=80" alt="Growth Strategy Meeting">
+      <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80" alt="Growth Strategy Meeting">
       <h3>Growth Package</h3>
       <p>Upgrade your sales engine. CRM workflows, coaching, and strategic enablement tools.</p>
       <ul class="feature-list">
@@ -204,21 +222,32 @@
     </div>
   </section>
 
-  <!-- HOW IT WORKS PLACEHOLDER -->
-  <section style="text-align: center; padding: 4rem 2rem; background: #f4f6f8;">
-    <h2 style="color: #09356B; font-size: 2rem; margin-bottom: 1rem;">How It Works</h2>
-    <p style="max-width: 800px; margin: 0 auto 2rem; color: #333; font-size: 1.1rem;">
-      From onboarding to results, we guide your team through a seamless, transparent process that prioritizes collaboration, accountability, and measurable outcomes.
-    </p>
-    <ol style="list-style-position: inside; max-width: 700px; margin: 0 auto; text-align: left; color: #09356B;">
-      <li><strong>Meet the Team:</strong> Align on vision and timelines.</li>
-      <li><strong>Define Your ICP:</strong> Map out audience targets and messaging.</li>
-      <li><strong>Build the Engine:</strong> Tools, enablement, CRM flows.</li>
-      <li><strong>Launch & Scale:</strong> Activate and monitor outcomes.</li>
-    </ol>
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="how-grid">
+      <div class="how-step">
+        <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="Team Icon">
+        <strong>Meet the Team</strong>
+        <p>Align on vision and timelines.</p>
+      </div>
+      <div class="how-step">
+        <img src="https://cdn-icons-png.flaticon.com/512/5956/5956499.png" alt="Target Icon">
+        <strong>Define Your ICP</strong>
+        <p>Map out audience targets and messaging.</p>
+      </div>
+      <div class="how-step">
+        <img src="https://cdn-icons-png.flaticon.com/512/3500/3500833.png" alt="Build Icon">
+        <strong>Build the Engine</strong>
+        <p>Tools, enablement, CRM flows.</p>
+      </div>
+      <div class="how-step">
+        <img src="https://cdn-icons-png.flaticon.com/512/753/753345.png" alt="Launch Icon">
+        <strong>Launch & Scale</strong>
+        <p>Activate and monitor outcomes.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- FOOTER -->
   <footer style="background: #09356B; color: white; text-align: center; padding: 1rem;">
     <p>© 2025 Keylight Growth. All rights reserved.</p>
   </footer>
