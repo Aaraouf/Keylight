@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services | Keylight Growth</title>
- <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | Keylight Growth</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- <nav class="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="logo">
-      <img src="assets/Logo.png" alt="Keylight Growth Logo" />
-    </a>
-    <ul class="nav-links">
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="booking.html" class="cta-button">Get Started</a>
-  </div>
-</nav>
 
-  <section class="page-section">
-    <h1>Our Services</h1>
-    <h2>Starter Package</h2>
-    <p>Ideal for early-stage teams looking for foundational structure. Includes playbook creation, CRM audit, initial enablement setup, and customized sales workflows to jumpstart predictable growth.</p>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="assets/Logo.png" alt="Keylight Growth Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="booking.html" class="cta-button">Get Started</a>
+    </div>
+  </nav>
 
-    <h2>Growth Package</h2>
-    <p>Designed for scaling organizations ready to optimize their go-to-market motion. Strategic enablement frameworks, funnel diagnostics, CRM integrations, coaching modules, and leadership workshops.</p>
+  <!-- HERO -->
+  <header class="page-hero" style="background: linear-gradient(to right, #09356B, #004c97); color: white; padding: 4rem 2rem; text-align: center;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Our Services</h1>
+    <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">
+      Scalable sales enablement and revenue solutions to help you grow faster, smarter, and stronger.
+    </p>
+  </header>
 
-    <h2>Enterprise Package</h2>
-    <p>Comprehensive sales transformation solutions: Executive advisory, deep revenue analytics integration, custom dashboard builds, full technology stack enablement, and strategic expansion planning.</p>
-
-    <h2>Quick Wins</h2>
-    <p>Need immediate results? We offer tactical solutions like CRM audits, Sales Process-in-a-Box playbooks, Enablement template libraries, and Prospecting Playbook creation tailored for your industry.</p>
+  <!-- SERVICES GRID -->
+  <section style="padding: 4rem 2rem; max-width: 1100px; margin: auto;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+      <div style="background: #f4f6f8; padding: 2rem; border-radius: 12px;">
+        <h3 style="color: #09356B;">Starter Package</h3>
+        <p>Playbook creation, CRM audit, and basic enablement setup for early-stage teams.</p>
+      </div>
+      <div style="background: #f4f6f8; padding: 2rem; border-radius: 12px;">
+        <h3 style="color: #09356B;">Growth Package</h3>
+        <p>Strategic frameworks, CRM optimization, and full-funnel GTM for scaling teams.</p>
+      </div>
+      <div style="background: #f4f6f8; padding: 2rem; border-radius: 12px;">
+        <h3 style="color: #09356B;">Enterprise Package</h3>
+        <p>Executive enablement, stack integration, and advanced sales transformation.</p>
+      </div>
+    </div>
   </section>
 
-  <footer>
+  <!-- FOOTER -->
+  <footer style="background: #09356B; color: white; text-align: center; padding: 1rem;">
     <p>© 2025 Keylight Growth. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
