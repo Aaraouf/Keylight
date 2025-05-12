@@ -376,6 +376,24 @@ footer {
   margin: 0 auto;
   line-height: 1.6;
 }
+.testimonial-card {
+  background: #0B3A6A;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+.testimonial-card {
+  background: #0B3A6A;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
 
 
 }
