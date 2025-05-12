@@ -376,26 +376,47 @@ footer {
   margin: 0 auto;
   line-height: 1.6;
 }
+.testimonials {
+  padding: 4rem 2rem;
+  background-color: #09356B;
+  color: white;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
 .testimonial-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  margin-top: 2rem;
 }
 
 .testimonial-card {
-  background-color: #09356B;
-  color: white;
+  background-color: #04315C;
+  border-radius: 12px;
   padding: 2rem;
-  border-radius: 10px;
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.testimonial-card em {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 1rem;
+  color: #fff;
 }
+
+.testimonial-card strong {
+  color: #FFC72C;
+  font-size: 1rem;
+}
+
 
 
 }
